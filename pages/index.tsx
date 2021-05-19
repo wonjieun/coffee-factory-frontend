@@ -12,6 +12,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <Image src="/images/profile.jpg" alt="Your Name" width={400} height={400} />
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
