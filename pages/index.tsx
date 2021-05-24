@@ -15,7 +15,7 @@ const Home = () => {
       <main className={styles.main}>
         <Image src="/images/profile.jpg" alt="Your Name" width={400} height={400} />
         <div className="App">
-        <Link href="/gift/home"><Button type="primary">커피공장</Button></Link>
+        <Link href="/gift"><Button type="primary">커피공장</Button></Link>
         </div>
       </main>
     </div>

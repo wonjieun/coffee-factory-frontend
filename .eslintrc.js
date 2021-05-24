@@ -15,8 +15,9 @@ module.exports = {
     'prettier/@typescript-eslint',
     'plugin:import/typescript',
     'plugin:@typescript-eslint/recommended',
+    'plugin:prettier/recommended',
   ],
-  plugins: ['@typescript-eslint', 'import-helpers'],
+  plugins: ['@typescript-eslint', 'import-helpers', 'prettier'],
   env: {
     browser: true,
     jest: true,
@@ -99,23 +100,4 @@ module.exports = {
     '@typescript-eslint/ban-ts-comment': 0,
     '@typescript-eslint/no-use-before-define': 0,
   },
-  overrides: [
-    {
-      files: ['*.config.js', 'webpack/**'],
-      rules: {
-        'import-helpers/order-imports': 0,
-        '@typescript-eslint/no-var-requires': 0,
-      },
-    },
-    {
-      files: [
-        './src/pages/*/index.tsx',
-        './src/pages/*.tsx',
-        './src/pages/**/pages/**/index.tsx',
-      ],
-      rules: {
-        'import/no-default-export': 0,
-      },
-    },
-  ],
 };
