@@ -5,12 +5,19 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint:file": "cross-env eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "lint": "cross-env eslint . --ext .js,.jsx,.ts,.tsx --fix.",
+    "pretty": "cross-env fixme=fixme prettier --write '**/*.{j,t}{s,sx}'",
+    "pretty:watch": "cross-env fixme=fixme onchange '**/*.{j,t}{s,sx}' -- prettier --write {{changed}}",
+    "ts-check": "cross-env tsc",
+    "ts-check:watch": "yarn ts-check -- --watch"
   },
   "dependencies": {
     "@types/postcss-preset-env": "^6.7.2",
     "@types/tailwindcss": "^2.0.3",
     "antd": "^4.15.6",
+    "antd-mobile": "^2.3.4",
     "next": "10.2.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",

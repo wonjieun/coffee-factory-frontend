@@ -16,12 +16,22 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "typeRoots": [
+      "./node_modules/@types",
+      "./@types"
+    ],
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./*"],
+      "@interfaces/*": ["../interfaces/*"]
+    }
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "../interfaces/**/*",
   ],
   "exclude": [
     "node_modules"
