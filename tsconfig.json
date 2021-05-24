@@ -24,15 +24,9 @@
     "baseUrl": "./",
     "paths": {
       "@/*": ["./*"],
-      "@interfaces/*": ["../interfaces/*"]
     }
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    "../interfaces/**/*",
-  ],
+  "include": ["**/*.ts", "**/*.tsx"],
   "exclude": [
     "node_modules"
   ]

@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../../components/layout'
+import Layout from '@/components/Layout'
 
-export default function Home() {
+const Home = () => {
   return (
     <Layout>
       <Head>
@@ -17,3 +17,5 @@ export default function Home() {
     </Layout>
   )
 }
+
+export default Home

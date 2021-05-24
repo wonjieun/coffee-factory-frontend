@@ -2,9 +2,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
-import { Button, DatePicker } from 'antd';
+import { Button } from 'antd-mobile';
 
-export default function Home() {
+const Home = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -16,9 +16,10 @@ export default function Home() {
         <Image src="/images/profile.jpg" alt="Your Name" width={400} height={400} />
         <div className="App">
         <Link href="/gift/home"><Button type="primary">커피공장</Button></Link>
-          <DatePicker placeholder="select date" />
         </div>
       </main>
     </div>
   )
 }
+
+export default Home;
