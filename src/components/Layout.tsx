@@ -1,24 +1,20 @@
-import React, { ReactNode } from 'react'
-import { NavBar, Icon, WingBlank } from 'antd-mobile'
-import { withRouter, NextRouter } from 'next/router'
-import Head from 'next/head'
+import React, { ReactNode } from 'react';
+import { NavBar, Icon, WingBlank } from 'antd-mobile';
+import { withRouter, NextRouter } from 'next/router';
+import Head from 'next/head';
 
 type LayoutProps = {
-  router: NextRouter
-  children?: ReactNode
-  title?: string
-}
+  router: NextRouter;
+  children?: ReactNode;
+  title?: string;
+};
 
 const Layout = ({ router, children, title }: LayoutProps) => (
   <div>
     <Head>
       <title>{title}</title>
     </Head>
-    <NavBar
-      mode="light"
-      icon={<Icon type="left" />}
-      onLeftClick={() => router.back()}
-    >
+    <NavBar mode="light" icon={<Icon type="left" />} onLeftClick={() => router.back()}>
       Ant Design Mobile example
     </NavBar>
     <h1>{title}</h1>
@@ -35,6 +31,6 @@ const Layout = ({ router, children, title }: LayoutProps) => (
     `}</style>
     <WingBlank>{children}</WingBlank>
   </div>
-)
+);
 
 export default withRouter(Layout);

@@ -1,6 +1,6 @@
-import Layout from '../components/Layout'
-import { Button } from 'antd-mobile'
-import Link from 'next/link'
+import Layout from '../components/Layout';
+import { Button } from 'antd-mobile';
+import Link from 'next/link';
 
 const About = () => {
   return (
@@ -9,6 +9,6 @@ const About = () => {
         <Button>Go to Index</Button>
       </Link>
     </Layout>
-  )
-}
+  );
+};
 export default About;

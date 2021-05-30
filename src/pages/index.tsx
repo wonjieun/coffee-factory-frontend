@@ -1,7 +1,7 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
-import styles from '../styles/Home.module.css'
+import styles from '@/styles/Home.module.css';
+import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
 import { Button } from 'antd-mobile';
 
 const Home = () => {
@@ -13,13 +13,15 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <Image src="/images/profile.jpg" alt="Your Name" width={400} height={400} />
+        <Image src="/images/profile.jpg" alt="커피공장" width={400} height={400} />
         <div className="App">
-        <Link href="/gift"><Button type="primary">커피공장</Button></Link>
+          <Link href="/gift">
+            <Button type="primary">커피공장</Button>
+          </Link>
         </div>
       </main>
     </div>
-  )
-}
+  );
+};
 
 export default Home;
